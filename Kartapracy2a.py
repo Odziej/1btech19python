@@ -1,3 +1,4 @@
+
 '''
 #Zad 1
 
@@ -42,7 +43,7 @@ if l == m:
   print("Tak",l,m)
 else:
   print("Nie")
-'''
+
 
 #Zad 4
 
@@ -53,12 +54,49 @@ b = int(input("Wpisz liczbę B. "))
 c = int(input("Wpisz liczbę C. "))
 d = int(input("Wpisz liczbę D. "))
 
-if a < b:
-  if a < c:
-    print (a)
+if a<b<c<d:
+  print(a)
+else:
+  if b<c<d:
+    print(b)
+  else:
+    if c<d:
+      print(c)
     else:
-      print (c)
-      elif b < c:
-      print b
-      else:
-        print c
+      print(d)
+
+
+
+
+#Zad 5
+
+a = int(input("Wpisz liczbę A. "))
+b = int(input("Wpisz liczbę B. "))
+c = int(input("Wpisz liczbę C. "))
+
+if a < c and b < c and a + b > c:
+  print("Tak")
+else:
+  if c < b and a < b and c + a > b:
+    print("Tak")
+  else:
+    if c < a and b < a and c + b > a:
+      print("Tak")
+    else:
+      print("Nie")
+
+
+#Zad 6
+
+a = int(input("Wpisz liczbę A. "))
+b = int(input("Wpisz liczbę B. "))
+c = int(input("Wpisz liczbę C. "))
+
+if a**2 + b**2 == c**2:
+  print("Trójkąt prostokątny")
+else:
+  if c**2 > a**2 + b**2:
+    print("Trójkąt rozwartokątny")
+  else:
+    print("Trójkąt ostrokątny")
+'''

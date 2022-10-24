@@ -1,4 +1,4 @@
-
+import random
 '''
 #Zad 1
 
@@ -100,3 +100,4 @@ else:
   else:
     print("Trójkąt ostrokątny")
 '''
+

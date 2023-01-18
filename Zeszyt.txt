@@ -1,0 +1,32 @@
+Temat: Listy i pseudokod
+
+1. Lista i jej deklaracja
+
+L = []
+L = [1, 2, 3, 4, 5]
+
+/
+
+import.random
+L = [for i in range(10): randint(1,100)]
+
+/
+
+L = [0] * 5 --> [0,0,0,0,0]
+
+2. Dostęp do elementów
+
+L = [1,2,3,4,5]
+
+print(L[1]) => 2
+print(L[2]) => 3
+print(L) => [...]
+print(len(L)) => długość listy = (4)
+
+3. Pentla w liście
+
+for elem in L:
+  print(elem)
+
+for i in range(len(L)):
+  print(L[i])

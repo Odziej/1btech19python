@@ -21,7 +21,7 @@ L = [1,2,3,4,5]
 print(L[1]) => 2
 print(L[2]) => 3
 print(L) => [...]
-print(len(L)) => długość listy = (4)
+print(len(L)) => długość listy = (5)
 
 3. Pentla w liście
 

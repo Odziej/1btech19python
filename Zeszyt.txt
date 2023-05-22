@@ -30,3 +30,133 @@ for elem in L:
 
 for i in range(len(L)):
   print(L[i])
+
+4. Funkcje 
+
+- Append - Dodaje element na końec listy
+- Count - Zwraca ilosć wystąpień danego elementu w liście 
+- Index - Zwraca index pierwszego elementu od lewej o danej wartości
+- Insert - Dodaje element na podanej pozycji
+- Pop - Usuwa element na danej pozycji
+- Remove - Usuwa pierwsze wystąpienie elementu o podanej wartości
+- Reverse - Odwraca listę
+- Sort - Sortuje liste (domyślnie rosnąco)
+- Max - Największy element listy
+- Min - Najmniejszy element listy
+
+***************************************************************************************************************************************************************************
+
+Temat: Szyfr RSA
+
+1.Klucz publiczny jest powszechnie znany i jest używany do szyfrowania.
+2.Kucz prywatny jest tajny i jest do deszyfrowania.
+3. Zalety RSA:
+- może być używany powszechnie
+- jest nie do złamania ponieważ korzysta z duży liczb pierwszych
+- trzeba chronić tylko klucz prywatny
+
+4. Szyfrowanie:
+a) Wybór dużych liczb pierwszych
+b) Obliczenie n=p*q i funkcji Eulera F(p-1)*(q-1)
+c) Generujemy klucz publiczny z e taki że, NWD(e,F)=1
+d) Generujemy klucz prywatny d taki, że d*e mod F = 1
+e) Przykład działania RSA:
+    m - moja wiadomość - massage
+    c = m**e % n (szyfrogram - cypher - wiadomość zaszyfrowana)
+    t = c**d % m (tekst jawny czyli nasza wiadomość - text (message))
+
+
+
+Temat: Huffman
+a = "ABCDDQREEEEQQQQ"
+ilosc = 1
+b = ""
+a += "."
+for i in range(len(a)-1):
+  if a[i] == a[i+1]:
+    ilosc+=1
+  else:
+    if ilosc > 1:
+      b += str(ilosc)
+    b += str(a[i])
+    ilosc = 1
+print(b)
+
+Temat: NAPISY
+
+1. Napisy (stringi) są "prawie listami"
+
+Temat: ONP
+
+1) 372143+--+*
+    274-*842-/33+++
+3 7 2 1 4 3
+3 7 2 1 7
+3 7 2 -6
+3 7 8
+3 15
+4 5
+
+2 7 4
+2 3
+6
+6 8 4 2
+6 8 2
+6 4
+6 4 3 3
+6 4 6
+6 10
+16
+
+W: 3
+S: *
+
+W: 3
+S: * (
+
+W: 3 5
+S: *(
+
+W: 3 5
+S: *(-
+
+W: 3 5 4
+S: * ( -
+
+W: 3 5 4 *
+S: ( - *
+
+W: 3 5 4 * 2
+S: ( - *
+
+W: 3 5 4 * 2 - *
+S:
+
+W: 3 5 4 * 2 - *
+S: /
+
+W: 3 5 4 * 2 - * 3
+S: / 
+
+W: 3 5 4 * 2 - * 3
+S: / +
+
+W: 3 5 4 * 2 - * 3 2
+S: / +
+
+W: 3 5 4 * 2 - * 3 2
+S: / +
+
+W: 3 5 4 * 2 - * 3 2
+S: * +
+
+W: 3 5 4 * 2 - * 3 2 8
+S: * +
+
+W: 3 5 4 * 2 - * 3 2 8
+S: * -
+
+W: 3 5 4 * 2 - * 3 2 8 5
+S: * -
+
+3 5 4 * 2 - * 3 2 8 5 * -
